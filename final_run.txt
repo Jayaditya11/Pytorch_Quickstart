@@ -1,0 +1,7 @@
+INFO : Starting Flower simulation (10 rounds, 100 SuperNodes, client-resources-num-cpus=1)
+INFO : Run ID: run_20261109_153548 (3j2kg36x)
+INFO : Round 0  -> centralized_accuracy: 0.0681 | centralized_loss: 2.3083
+INFO : Round 3  -> centralized_accuracy: 0.6614 | centralized_loss: 0.9397
+INFO : Round 5  -> centralized_accuracy: 0.7148 | centralized_loss: 0.7499
+INFO : Round 10 -> centralized_accuracy: 0.7585 | centralized_loss: 0.6083
+INFO : Saving final model to disk (final_model.pt)...

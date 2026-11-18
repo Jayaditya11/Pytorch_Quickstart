@@ -1,0 +1,35 @@
+{
+  "os":  "Windows-10-10.0.22631-SP0",
+  "python":  "CPython 3.11.9",
+  "startedAt":  "2026-11-09T20:23:42.755307Z",
+  "args":  [
+    "--runtime-api-address",
+    "127.0.0.1:39091",
+    "--token",
+    "2d4b1d45cd39851052c97dece966f68dabf050909472533b2aee51fa0f8f49d01625dfc100d901bcbdbdb72d6038b47e498bb1e93cbace0dcb5f6ffe188cba279069626cc01139ca793bb256536e366813620be274a666f7cd09bd8bd28cf8ec2d40fd84af91bbc8e94921d0daa669fccaaadc88f6599afd9c9cb5d0199d0fe4",
+    "--insecure",
+    "--parent-pid",
+    "123480",
+    "--allow-runtime-dependency-installation"
+  ],
+  "program":  "-m __main__",
+  "email":  "jayadityap18@gmail.com",
+  "root":  "C:\\Users\\jayad\\flower-project\\quickstart-pytorch\\quickstart-pytorch",
+  "host":  "VidyaYantr",
+  "executable":  "C:\\Users\\jayad\\flower-project\\quickstart-pytorch\\quickstart-pytorch\\.venv\\Scripts\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "510968983552",
+      "used":  "214184112128"
+    }
+  },
+  "memory":  {
+    "total":  "16806326272"
+  },
+  "cpu":  {
+    "model":  "12th Gen Intel(R) Core(TM) i7-1255U"
+  },
+  "writerId":  "01a1c1fb-1feb-7f41-90d7-6794528e3b0d"
+}

@@ -1,0 +1,28 @@
+C:\Users\jayad\.flwr\runtime-envs\9790564333705649126\Lib\site-packages\ray\_private\worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[91mERROR [0m:     Simulation raised an exception
+Traceback (most recent call last):
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\simulation\app.py", line 337, in run_simulation_process
+    simulation_result = _run_simulation(
+                        ^^^^^^^^^^^^^^^^
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\simulation\run_simulation.py", line 503, in _run_simulation
+    simulation_result = _main_loop(*args)
+                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\simulation\run_simulation.py", line 376, in _main_loop
+    raise thread_ex.with_traceback(thread_ex.__traceback__)
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\simulation\run_simulation.py", line 223, in server_th_with_start_checks
+    updated_context = _run(
+                      ^^^^^
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\server\run_serverapp.py", line 60, in run
+    server_app(grid=grid, context=context)
+  File "C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Lib\site-packages\flwr\serverapp\server_app.py", line 176, in __call__
+    self._main(grid, context)
+  File "C:\Users\jayad\.flwr\apps\flwrlabs.quickstart-pytorch.1.1.13.2a5bb82a\pytorchexample\server_app.py", line 55, in main
+    strategy = FedAvg(
+               ^^^^^^^
+TypeError: FedAvg.__init__() got an unexpected keyword argument 'on_train_config_fn'
+[91mERROR [0m:     Exit Code: 700
+
+An unhandled exception occurred when running the simulation.
+
+For more information, visit: <https://flower.ai/docs/framework/1.43/en/ref-exit-codes/700.html>

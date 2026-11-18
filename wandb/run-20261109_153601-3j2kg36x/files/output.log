@@ -1,0 +1,184 @@
+[92mINFO [0m:      Starting FedAvg strategy:
+[92mINFO [0m:      	├── Number of rounds: [92mINFO [0m:      	├── ArrayRecord (0.17 M[92mINFO [0m:      	├── ConfigRecord (train): {'lr': 0.0[92mINFO [0m:      	├── ConfigRecord (evaluate): (empty[92mINFO [0m:      	├──> Samplin[92mINFO [0m:      	│	├──Fraction: train (1.00) | evaluate ( 1.[92mINFO [0m:      	│	├──Minimum nodes: train (2) | evaluate [92mINFO [0m:      	│	└──Minimum available nodes[92mINFO [0m:      	└──> Keys in record[92mINFO [0m:      		├── Weighted by: 'num-example[92mINFO [0m:      		├── ArrayRecord key: 'array[92mINFO [0m:      		└── ConfigRecord key: 'confi[92mINFO [0m:
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      Initial global evaluation results: {'accuracy': 0.0681, 'loss': 2.3083297693276705}
+[92mINFO [0m:
+[92mINFO [0m:      [ROUND 1/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py:2051: FutureWarning: Tip: In future versions of Ray, Ray will no longer override accelerator visible devices env var if num_gpus=0 or num_gpus=None (default). To enable this behavior and turn off this error message, set RAY_ACCEL_ENV_VAR_OVERRIDE_ON_ZERO=0
+  warnings.warn(
+[33m(raylet)[0m Stack (most recent call first):
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 628 in job_logging_config
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 2801 in disconnect
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 2132 in shutdown
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 1143 in wrapper
+[33m(raylet)[0m Windows fatal exception: Windows fatal exception: access violation
+[33m(raylet)[0m
+[33m(raylet)[0m access violation
+[33m(raylet)[0m
+[33m(raylet)[0m   File   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py"", line 628 in job_logging_config
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\client_mode_hook.py", line , line 107 in wrapper
+[33m(raylet)[0m 628 in job_logging_config
+[36m(ClientAppActor pid=87464)[0m Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[33m(raylet)[0m Stack (most recent call first):[32m [repeated 11x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 628 in job_logging_config[32m [repeated 9x across cluster][0m
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 2801 in disconnect[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\worker.py", line 2132 in shutdown[32m [repeated 11x across cluster][0m
+[33m(raylet)[0m   File "C:\Users\jayad\.flwr\runtime-envs\14213665233327803995\Lib\site-packages\ray\_private\client_mode_hook.py", line 107 in wrapper[32m [repeated 22x across cluster][0m
+[36m(ClientAppActor pid=112396)[0m Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[32m [repeated 2x across cluster][0m
+[36m(ClientAppActor pid=87464)[0m Client 9 Persistent Loss History: [1.9168534886603261]
+[36m(ClientAppActor pid=164016)[0m Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[32m [repeated 9x across cluster][0m
+[36m(ClientAppActor pid=87464)[0m Client 12 Persistent Loss History: [1.8974513188004494]
+[36m(ClientAppActor pid=87464)[0m Client 13 Persistent Loss History: [1.8432529016777321]
+[36m(ClientAppActor pid=142644)[0m Client 8 Persistent Loss History: [2.144031613301008]
+[36m(ClientAppActor pid=152008)[0m Client 4 Persistent Loss History: [2.158152532577515][32m [repeated 15x across cluster][0m
+[36m(ClientAppActor pid=87464)[0m
+[36m(ClientAppActor pid=164016)[0m Client 47 Persistent Loss History: [1.7511931334932644][32m [repeated 29x across cluster][0m
+[36m(ClientAppActor pid=112396)[0m Client 76 Persistent Loss History: [1.6733271526355369][32m [repeated 24x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.999698573724600[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.2302964870027406[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.231, 'loss': 2.132383584976196[92mINFO [0m:
+[92mINFO [0m:      [ROUND 2/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=112396)[0m Client 5 Persistent Loss History: [2.0476721380696152, 1.4631178523554946][32m [repeated 29x across cluster][0m
+[36m(ClientAppActor pid=142644)[0m Client 31 Persistent Loss History: [1.827076230132789, 1.0540109491139127][32m [repeated 31x across cluster][0m
+[36m(ClientAppActor pid=174032)[0m Client 64 Persistent Loss History: [1.7511595413088799, 1.2484976494063933][32m [repeated 32x across cluster][0m
+[36m(ClientAppActor pid=152504)[0m Client 91 Persistent Loss History: [1.9574727661469404, 1.2951617544772578][32m [repeated 31x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.988542865182720[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.4894942280541483[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.4903, 'loss': 1.353227606302575[92mINFO [0m:
+[92mINFO [0m:      [ROUND 3/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=142644)[0m Client 3 Persistent Loss History: [2.266459928618537, 1.6330031951268513, 0.9509356617927551][32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=112396)[0m Client 34 Persistent Loss History: [1.8601985559577034, 1.1344902189004988, 0.7686137365443366][32m [repeated 31x across cluster][0m
+[36m(ClientAppActor pid=104892)[0m Client 63 Persistent Loss History: [1.4212566660899741, 0.8371135171721963, 0.6278635446055263][32m [repeated 35x across cluster][0m
+[36m(ClientAppActor pid=104892)[0m Client 97 Persistent Loss History: [1.840268353621165, 1.2011188478381545, 0.8743773384226693][32m [repeated 31x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.992375220730903[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.668299975085125[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.6614, 'loss': 0.939650278302687[92mINFO [0m:
+[92mINFO [0m:      [ROUND 4/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=187800)[0m Client 10 Persistent Loss History: [2.1726873318354287, 1.6929461280504863, 1.05124458471934, 0.8915532231330872][32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=174032)[0m Client 39 Persistent Loss History: [2.2397320535447864, 1.881810157387345, 1.2482741430953697, 0.9642399681939019][32m [repeated 31x across cluster][0m
+[36m(ClientAppActor pid=108796)[0m Client 67 Persistent Loss History: [2.038119876384735, 1.2404108454783758, 0.8158793499072393, 0.8076652030150095][32m [repeated 34x across cluster][0m
+[36m(ClientAppActor pid=152008)[0m Client 90 Persistent Loss History: [1.7111852603654067, 1.1014503488938014, 0.7381710975120465, 0.6246821495393912][32m [repeated 30x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.955914453771353[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.712067104061124[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.6951, 'loss': 0.820434699330148[92mINFO [0m:
+[92mINFO [0m:      [ROUND 5/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=164016)[0m Client 3 Persistent Loss History: [2.266459928618537, 1.6330031951268513, 0.9509356617927551, 0.6693419218063354, 0.5310460279385248][32m [repeated 5x across cluster][0m
+[36m(ClientAppActor pid=112396)[0m Client 31 Persistent Loss History: [1.827076230132789, 1.0540109491139127, 0.6289625722065306, 0.5234911427424666, 0.48556212453465714][32m [repeated 29x across cluster][0m
+[36m(ClientAppActor pid=174032)[0m Client 67 Persistent Loss History: [2.038119876384735, 1.2404108454783758, 0.8158793499072393, 0.8076652030150095, 0.5232297460238139][32m [repeated 37x across cluster][0m
+[36m(ClientAppActor pid=156612)[0m Client 97 Persistent Loss History: [1.840268353621165, 1.2011188478381545, 0.8743773384226693, 0.7407131907012727, 0.6882244999761935][32m [repeated 31x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.992838881452856[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.73108545801843[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7148, 'loss': 0.749886321116097[92mINFO [0m:
+[92mINFO [0m:      [ROUND 6/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=87464)[0m Client 3 Persistent Loss History: [2.266459928618537, 1.6330031951268513, 0.9509356617927551, 0.6693419218063354, 0.5310460279385248, 0.4963654428720474][32m [repeated 3x across cluster][0m
+[36m(ClientAppActor pid=104892)[0m Client 26 Persistent Loss History: [1.850299127275745, 1.2077215674740729, 0.8570314233501752, 0.8358616071442763, 0.7661375460525354, 0.624194385483861][32m [repeated 29x across cluster][0m
+[36m(ClientAppActor pid=164016)[0m Client 59 Persistent Loss History: [1.9813986937204997, 1.2147913032107882, 0.8243142485618591, 0.6203916690415806, 0.5513127190371354, 0.5381854239437315][32m [repeated 30x across cluster][0m
+[36m(ClientAppActor pid=87464)[0m Client 88 Persistent Loss History: [1.600490388770898, 0.8702153209596872, 0.5719269970431924, 0.391894672686855, 0.37312444346025586, 0.29982019619395334][32m [repeated 30x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.978006547874795[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.739971763142596[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7233, 'loss': 0.709693104405946[92mINFO [0m:
+[92mINFO [0m:      [ROUND 7/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=108796)[0m Client 5 Persistent Loss History: [2.0476721380696152, 1.4631178523554946, 0.8325743395270724, 0.6007173404549108, 0.45832765079808957, 0.38510687716982583, 0.3731789333802281][32m [repeated 11x across cluster][0m
+[36m(ClientAppActor pid=156612)[0m Client 34 Persistent Loss History: [1.8601985559577034, 1.1344902189004988, 0.7686137365443366, 0.5437342790620667, 0.4708572335186459, 0.41923121611277264, 0.3870133427636964][32m [repeated 31x across cluster][0m
+[36m(ClientAppActor pid=152504)[0m Client 68 Persistent Loss History: [2.2353571483067105, 1.7650247244607835, 1.1251483247393654, 0.9397793525741214, 0.8306715289751688, 0.7713144591876439, 0.7229058501266298][32m [repeated 32x across cluster][0m
+[36m(ClientAppActor pid=142644)[0m Client 94 Persistent Loss History: [1.9350028832753499, 1.2463424785269632, 0.8598248925473955, 0.7362916603408478, 0.6101218216397144, 0.5402671221505713, 0.5222799503416927][32m [repeated 31x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.995382104948113[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.750103811975749[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7361, 'loss': 0.681639448374132[92mINFO [0m:
+[92mINFO [0m:      [ROUND 8/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=104892)[0m Client 3 Persistent Loss History: [2.266459928618537, 1.6330031951268513, 0.9509356617927551, 0.6693419218063354, 0.5310460279385248, 0.4963654428720474, 0.44687311185730827, 0.4390348709291882][32m [repeated 6x across cluster][0m
+[36m(ClientAppActor pid=87464)[0m Client 33 Persistent Loss History: [2.1308311969041824, 1.4314018487930298, 0.9586026581625143, 0.8351898876329263, 0.706187759215633, 0.6999117787927389, 0.6723259842644135, 0.6449259544412295][32m [repeated 33x across cluster][0m
+[36m(ClientAppActor pid=164016)[0m Client 69 Persistent Loss History: [1.8872396633738564, 1.3082890851157052, 0.7881754920596168, 0.6669530825955527, 0.5868442342394874, 0.5060446021102724, 0.5287722115005765, 0.4755039828873816][32m [repeated 34x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.996036426077653[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.755751183456523[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7425, 'loss': 0.649452287562285[92mINFO [0m:
+[92mINFO [0m:      [ROUND 9/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=112396)[0m Client 3 Persistent Loss History: [2.266459928618537, 1.6330031951268513, 0.9509356617927551, 0.6693419218063354, 0.5310460279385248, 0.4963654428720474, 0.44687311185730827, 0.4390348709291882, 0.4461459252569411][32m [repeated 33x across cluster][0m
+[36m(ClientAppActor pid=142644)[0m Client 40 Persistent Loss History: [2.214337611198425, 1.6855055729548136, 1.1173645337422689, 0.9117923259735108, 0.7905765851338704, 0.665447786450386, 0.6156272123257319, 0.5812294691801071, 0.5239344984292984][32m [repeated 32x across cluster][0m
+[36m(ClientAppActor pid=187800)[0m Client 63 Persistent Loss History: [1.4212566660899741, 0.8371135171721963, 0.6278635446055263, 0.48765961708975775, 0.320685264177383, 0.36863773820154805, 0.28092869381219443, 0.27856851486014383, 0.27415446448596376][32m [repeated 35x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.99506841477337[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.763557844032887[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7519, 'loss': 0.629211550271963[92mINFO [0m:
+[92mINFO [0m:      [ROUND 10/10]
+[92mINFO [0m:      configure_train: Sampled 100 nodes (out of 100)
+[36m(ClientAppActor pid=152008)[0m Client 10 Persistent Loss History: [2.1726873318354287, 1.6929461280504863, 1.05124458471934, 0.8915532231330872, 0.7911421547333399, 0.7643731554349263, 0.7564240743716558, 0.6738082905610402, 0.6802547504504521, 0.6429715206225713][32m [repeated 33x across cluster][0m
+[36m(ClientAppActor pid=187800)[0m Client 33 Persistent Loss History: [2.1308311969041824, 1.4314018487930298, 0.9586026581625143, 0.8351898876329263, 0.706187759215633, 0.6999117787927389, 0.6723259842644135, 0.6449259544412295, 0.5990503194431464, 0.5892486615727345][32m [repeated 33x across cluster][0m
+[36m(ClientAppActor pid=104892)[0m Client 63 Persistent Loss History: [1.4212566660899741, 0.8371135171721963, 0.6278635446055263, 0.48765961708975775, 0.320685264177383, 0.36863773820154805, 0.28092869381219443, 0.27856851486014383, 0.27415446448596376, 0.3113858601187958][32m [repeated 34x across cluster][0m
+[92mINFO [0m:      aggregate_train: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'max_b': 0.993724436874383[92mINFO [0m:      configure_evaluate: Sampled 100 nodes (out of 100)
+[92mINFO [0m:      aggregate_evaluate: Received 100 results and 0 failures
+[92mINFO [0m:      	└──> Aggregated MetricRecord: {'accuracy': 0.772278049995847[92mINFO [0m:      Global evaluation
+[92mINFO [0m:      	└──> MetricRecord: {'accuracy': 0.7585, 'loss': 0.608348316029657[92mINFO [0m:
+[92mINFO [0m:      Strategy execution finished in 333.99s
+[92mINFO [0m:
+[92mINFO [0m:      Final results:
+[92mINFO [0m:
+[92mINFO [0m:      	Global Arrays:
+[92mINFO [0m:      		ArrayRecord (0.171 MB)
+[92mINFO [0m:      	
+[92mINFO [0m:      	Aggregated ClientApp-side Train Metrics:
+[92mINFO [0m:      	{ 1: {'max_b': '9.9970e-01'},
+[92mINFO [0m:      	  2: {'max_b': '9.8854e-01'},
+[92mINFO [0m:      	  3: {'max_b': '9.9238e-01'},
+[92mINFO [0m:      	  4: {'max_b': '9.5591e-01'},
+[92mINFO [0m:      	  5: {'max_b': '9.9284e-01'},
+[92mINFO [0m:      	  6: {'max_b': '9.7801e-01'},
+[92mINFO [0m:      	  7: {'max_b': '9.9538e-01'},
+[92mINFO [0m:      	  8: {'max_b': '9.9604e-01'},
+[92mINFO [0m:      	  9: {'max_b': '9.9507e-01'},
+[92mINFO [0m:      	  10: {'max_b': '9.9372e-01'}}
+[92mINFO [0m:      	
+[92mINFO [0m:      	Aggregated ClientApp-side Evaluate Metrics:
+[92mINFO [0m:      	{ 1: {'accuracy': '2.3030e-01'},
+[92mINFO [0m:      	  2: {'accuracy': '4.8949e-01'},
+[92mINFO [0m:      	  3: {'accuracy': '6.6830e-01'},
+[92mINFO [0m:      	  4: {'accuracy': '7.1207e-01'},
+[92mINFO [0m:      	  5: {'accuracy': '7.3109e-01'},
+[92mINFO [0m:      	  6: {'accuracy': '7.3997e-01'},
+[92mINFO [0m:      	  7: {'accuracy': '7.5010e-01'},
+[92mINFO [0m:      	  8: {'accuracy': '7.5575e-01'},
+[92mINFO [0m:      	  9: {'accuracy': '7.6356e-01'},
+[92mINFO [0m:      	  10: {'accuracy': '7.7228e-01'}}
+[92mINFO [0m:      	
+[92mINFO [0m:      	ServerApp-side Evaluate Metrics:
+[92mINFO [0m:      	{ 0: {'accuracy': '6.8100e-02', 'loss': '2.3083e+00'},
+[92mINFO [0m:      	  1: {'accuracy': '2.3100e-01', 'loss': '2.1324e+00'},
+[92mINFO [0m:      	  2: {'accuracy': '4.9030e-01', 'loss': '1.3532e+00'},
+[92mINFO [0m:      	  3: {'accuracy': '6.6140e-01', 'loss': '9.3965e-01'},
+[92mINFO [0m:      	  4: {'accuracy': '6.9510e-01', 'loss': '8.2043e-01'},
+[92mINFO [0m:      	  5: {'accuracy': '7.1480e-01', 'loss': '7.4989e-01'},
+[92mINFO [0m:      	  6: {'accuracy': '7.2330e-01', 'loss': '7.0969e-01'},
+[92mINFO [0m:      	  7: {'accuracy': '7.3610e-01', 'loss': '6.8164e-01'},
+[92mINFO [0m:      	  8: {'accuracy': '7.4250e-01', 'loss': '6.4945e-01'},
+[92mINFO [0m:      	  9: {'accuracy': '7.5190e-01', 'loss': '6.2921e-01'},
+[92mINFO [0m:      	  10: {'accuracy': '7.5850e-01', 'loss': '6.0835e-01'}}
+[92mINFO [0m:
+
+Saving final model to disk...

@@ -1,0 +1,8 @@
+INFO : Starting Flower simulation (3 rounds, default template)
+INFO : ServerApp-side Evaluate Metrics:
+INFO : { 0: {'accuracy': '1.0000e-01', 'loss': '2.3055e+00'},
+INFO :   1: {'accuracy': '1.0000e-01', 'loss': '2.3055e+00'},
+INFO :   2: {'accuracy': '1.0000e-01', 'loss': '2.3055e+00'},
+INFO :   3: {'accuracy': '1.0000e-01', 'loss': '2.3055e+00'}}
+INFO : Aggregated ClientApp-side Evaluate Metrics:
+INFO : { 1: {'accuracy': '9.6919e-02'}, 2: {'accuracy': '9.6919e-02'}, 3: {'accuracy': '9.6919e-02'}}

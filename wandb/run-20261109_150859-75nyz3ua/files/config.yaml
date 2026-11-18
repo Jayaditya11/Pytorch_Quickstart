@@ -1,0 +1,59 @@
+_wandb:
+    value:
+        cli_version: 0.31.0
+        e:
+            01a1c224-9e9a-7091-b83a-7053caae8a7a:
+                args:
+                    - --runtime-api-address
+                    - 127.0.0.1:39091
+                    - --token
+                    - 8a7de5683e5376c134e337ec1166e1a39e291f941dcf780bacd3e5604f249deb7aa35723362cfa77f928bb05371432ab49fd9b772ae8ce743d4ec0e3e953550681e69b9d94423ac3f4fd624e5db835ed395f702277730495e6a0a6606725684d26e715685aabd01549b1f8e4f32e03e0459654c8f970510f128e8862782ee62d
+                    - --insecure
+                    - --parent-pid
+                    - "123480"
+                    - --allow-runtime-dependency-installation
+                cpu:
+                    model: 12th Gen Intel(R) Core(TM) i7-1255U
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "510968983552"
+                        used: "214794534912"
+                email: jayadityap18@gmail.com
+                executable: C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch\.venv\Scripts\python.exe
+                host: VidyaYantr
+                memory:
+                    total: "16806326272"
+                os: Windows-10-10.0.22631-SP0
+                program: -m __main__
+                python: CPython 3.11.9
+                root: C:\Users\jayad\flower-project\quickstart-pytorch\quickstart-pytorch
+                startedAt: "2026-11-09T21:08:59.943566Z"
+                writerId: 01a1c224-9e9a-7091-b83a-7053caae8a7a
+        m: []
+        python_version: 3.11.9
+        t:
+            "1":
+                - 1
+                - 30
+                - 41
+                - 49
+                - 51
+            "2":
+                - 1
+                - 30
+                - 41
+                - 49
+                - 51
+            "3":
+                - 2
+                - 13
+                - 41
+                - 61
+            "4": 3.11.9
+            "5": 0.31.0
+            "8":
+                - 3
+            "12": 0.31.0
+            "13": windows-amd64
